@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumpy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img width="164px" src="Assets/dnc.png">
+    </header>
+
+    <section>
+        <img width="311px" src="Assets/jumpy.png">
+        <p id="message">Bem vindo ao Jumpy!</p>
+            <form id="form" method="get" autocomplete="off">
+                <label>Nome Completo</label>
+                <input id="name" placeholder="Nome Completo" type="text">
+                <div id="texto1" class="required"> *Campo Obrigatório* </div>
+
+                <label>Email</label>
+                <input id="email" placeholder="Email@email.com" type="text">
+                <div id="texto2" class="required"> *Campo Obrigatório* </div>
+
+                <label>Telefone</label>
+                <input id="phone" placeholder="(00) 00000-0000" type="text" maxlength="15">
+                <div id="texto3" class="required"> *Campo Obrigatório* </div>
+
+                <label>CPF</label>
+                <input id="cpf" placeholder="000.000.000-00" type="text" maxlength="14">
+                <div id="texto4" class="required"> *Campo Obrigatório* </div>
+
+                <label>Senha</label>
+                <input id="password" placeholder="*******************" type="password">
+                <div id="texto5" class="required"> *Campo Obrigatório* </div>
+
+                <button onclick="cadastrar()" type="submit">Cadastrar</button>
+                <div id="validacao"></div>
+            </form>
+
+    </section>
+
+
+    <script src="main.js" ></script>
+</body>
+
+</html>
